@@ -50,7 +50,7 @@ const submitNewTodo = (newTodo: string) => {
           <BaseButton @click="submitNewTodo(todo)" btn-type="green"> 新增 </BaseButton>
         </div>
         <TodoList :todos="filteredTodos" />
-        <p v-if="undoneCount > 0" class="mt-10 text-right text-lg">
+        <p v-if="undoneCount > 0" class="mt-4 text-right text-lg">
           目前共有{{ undoneCount }}項待完成
         </p>
         <p v-else class="mt-10 text-right text-lg">目前沒有待辦囉～</p>

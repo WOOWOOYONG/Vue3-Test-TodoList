@@ -9,7 +9,7 @@ defineProps<{ todos: TodoItem[] }>()
 </script>
 
 <template>
-  <ul v-if="todos.length > 0" class="text-lg">
+  <ul v-if="todos.length > 0" class="text-lg border-b-2 border-gray-300 pb-4">
     <li
       class="mb-4 flex cursor-pointer justify-between items-center"
       v-for="todo in todos"
