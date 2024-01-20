@@ -47,7 +47,9 @@ const submitNewTodo = (newTodo: string) => {
         <TodoStatusTab />
         <div class="flex mb-10 items-center gap-2">
           <TodoInput v-model.trim="todo" @keypress.enter="submitNewTodo(todo)" />
-          <BaseButton @click="submitNewTodo(todo)" btn-type="green"> 新增 </BaseButton>
+          <BaseButton @click="submitNewTodo(todo)" btn-type="yellow" :disabled="!todo">
+            新增
+          </BaseButton>
         </div>
         <TodoList :todos="filteredTodos" />
         <p v-if="undoneCount > 0" class="mt-4 text-right text-lg">

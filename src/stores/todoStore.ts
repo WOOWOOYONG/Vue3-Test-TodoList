@@ -7,7 +7,6 @@ export const useTodoStore = defineStore('todo', () => {
 
   const addTodo = (todo: string) => {
     if (todo.length === 0) {
-      alert('請先輸入待辦')
       return
     }
     todos.value = [
