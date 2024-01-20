@@ -4,7 +4,7 @@ export interface TodoItem {
   completed: boolean
 }
 
-export type NewTodo = {
+export interface NewTodo {
   id: string
   title: string
 }
